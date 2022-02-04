@@ -27,4 +27,9 @@ public class PlayerClickMove : MonoBehaviour
             }
         }
     }
+
+    public void OnMouseDown()
+    {
+        CameraController.instance.followTransform = transform;
+    }
 }

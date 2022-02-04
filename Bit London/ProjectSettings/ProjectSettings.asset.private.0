@@ -4,7 +4,7 @@
 PlayerSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 22
-  productGUID: 261eae50a4179f24fbe4a1f3dbcd561b
+  productGUID: fc374c02f1f25fc4898bad1553f33232
   AndroidProfiler: 0
   AndroidFilterTouchesWhenObscured: 0
   AndroidEnableSustainedPerformanceMode: 0
@@ -601,14 +601,7 @@ PlayerSettings:
   XboxOneOverrideIdentityName: 
   XboxOneOverrideIdentityPublisher: 
   vrEditorSettings: {}
-  cloudServicesEnabled:
-    Analytics: 0
-    Build: 0
-    Collab: 0
-    Game Performance: 0
-    Purchasing: 0
-    UDP: 0
-    Unity Ads: 0
+  cloudServicesEnabled: {}
   luminIcon:
     m_Name: 
     m_ModelFolderPath: 
@@ -625,8 +618,8 @@ PlayerSettings:
   cloudProjectId: c7e79ad8-7082-4722-96e6-318f2068b034
   framebufferDepthMemorylessMode: 0
   qualitySettingsNames: []
-  projectName: London Bit (3)
-  organizationId: london-bit
+  projectName: 
+  organizationId: 
   cloudEnabled: 0
   legacyClampBlendShapeWeights: 0
   virtualTexturingSupportEnabled: 0
