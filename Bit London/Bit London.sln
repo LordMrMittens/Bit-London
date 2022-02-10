@@ -1,18 +1,41 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
+<<<<<<< Updated upstream
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp", "Assembly-CSharp.csproj", "{FAE867AE-C910-36EA-A66E-CCC9131CD3CE}"
 EndProject
+=======
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnityEngine.UI", "UnityEngine.UI.csproj", "{A9007ACF-601A-85D2-1DCD-E8C7C428456D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp", "Assembly-CSharp.csproj", "{FAE867AE-C910-36EA-A66E-CCC9131CD3CE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnityEditor.UI", "UnityEditor.UI.csproj", "{793F6635-7FF0-F9E4-EC88-14BBABC50DC0}"
+EndProject
+>>>>>>> Stashed changes
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+<<<<<<< Updated upstream
+=======
+		{A9007ACF-601A-85D2-1DCD-E8C7C428456D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A9007ACF-601A-85D2-1DCD-E8C7C428456D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A9007ACF-601A-85D2-1DCD-E8C7C428456D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A9007ACF-601A-85D2-1DCD-E8C7C428456D}.Release|Any CPU.Build.0 = Release|Any CPU
+>>>>>>> Stashed changes
 		{FAE867AE-C910-36EA-A66E-CCC9131CD3CE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{FAE867AE-C910-36EA-A66E-CCC9131CD3CE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FAE867AE-C910-36EA-A66E-CCC9131CD3CE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FAE867AE-C910-36EA-A66E-CCC9131CD3CE}.Release|Any CPU.Build.0 = Release|Any CPU
+<<<<<<< Updated upstream
+=======
+		{793F6635-7FF0-F9E4-EC88-14BBABC50DC0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{793F6635-7FF0-F9E4-EC88-14BBABC50DC0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{793F6635-7FF0-F9E4-EC88-14BBABC50DC0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{793F6635-7FF0-F9E4-EC88-14BBABC50DC0}.Release|Any CPU.Build.0 = Release|Any CPU
+>>>>>>> Stashed changes
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
