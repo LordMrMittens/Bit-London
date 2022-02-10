@@ -5,6 +5,7 @@ using UnityEngine;
 public class CameraController : MonoBehaviour
 {
     public static CameraController instance;
+    public Camera orthographicCamera;
 
     public Transform followTransform;
     public Transform cameraTransform;
@@ -12,11 +13,11 @@ public class CameraController : MonoBehaviour
     public float movementSpeed;
     public float movementTime;
     public float rotationAmount;
-    public Vector3 zoomAmount;
+    //public Vector3 zoomAmount;
 
     public Vector3 newPosition;
     public Quaternion newRotation;
-    public Vector3 newZoom;
+    //public Vector3 newZoom;
 
     // Start is called before the first frame update
     void Start()
@@ -24,7 +25,8 @@ public class CameraController : MonoBehaviour
         instance = this;
         newPosition = transform.position;
         newRotation = transform.rotation;
-        newZoom = cameraTransform.localPosition;
+        //newZoom = cameraTransform.localPosition;
+        orthographicCamera.orthographicSize = 30;
     }
 
     // Update is called once per frame
@@ -48,9 +50,22 @@ public class CameraController : MonoBehaviour
 
     void HandleMouseInput()
     {
-        if(Input.mouseScrollDelta.y != 0)
+        if (Input.GetAxis("Mouse ScrollWheel") > 0f)
         {
-            newZoom += Input.mouseScrollDelta.y * zoomAmount;
+            orthographicCamera.orthographicSize = orthographicCamera.orthographicSize + 1000 * Time.deltaTime; //1000 = speed 
+            if (orthographicCamera.orthographicSize > 40)
+            {
+                orthographicCamera.orthographicSize = 40; // Max size
+            }
+        }
+        if (Input.GetAxis("Mouse ScrollWheel") < 0f)
+        {
+            orthographicCamera.orthographicSize = orthographicCamera.orthographicSize - 1000 * Time.deltaTime;
+            if (orthographicCamera.orthographicSize < 10)
+            {
+                orthographicCamera.orthographicSize = 10; // Min size
+            }
+
         }
     }
 
@@ -84,7 +99,7 @@ public class CameraController : MonoBehaviour
 
         transform.position = Vector3.Lerp(transform.position, newPosition, Time.deltaTime * movementTime);
         transform.rotation = Quaternion.Lerp(transform.rotation, newRotation, Time.deltaTime * movementTime);
-        cameraTransform.localPosition = Vector3.Lerp(cameraTransform.localPosition, newZoom, Time.deltaTime * movementTime);
+        //cameraTransform.localPosition = Vector3.Lerp(cameraTransform.localPosition, newZoom, Time.deltaTime * movementTime);
 
     }
 }
