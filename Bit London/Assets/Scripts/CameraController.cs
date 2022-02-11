@@ -88,17 +88,18 @@ public class CameraController : MonoBehaviour
             newPosition += (transform.right * -movementSpeed);
         }
 
-        if (Input.GetKey(KeyCode.Q))
+        if (Input.GetKeyDown(KeyCode.Q))
         {
-            newRotation *= Quaternion.Euler(Vector3.up * rotationAmount);
+            newRotation *= Quaternion.Euler(new Vector3(0f, 45f, 0f));
         }
-        if (Input.GetKey(KeyCode.E))
+        if (Input.GetKeyDown(KeyCode.E))
         {
-            newRotation *= Quaternion.Euler(Vector3.up * -rotationAmount);
+            newRotation *= Quaternion.Euler(new Vector3(0f, -45f, 0f));
         }
 
         transform.position = Vector3.Lerp(transform.position, newPosition, Time.deltaTime * movementTime);
-        transform.rotation = Quaternion.Lerp(transform.rotation, newRotation, Time.deltaTime * movementTime);
+        //transform.rotation = Quaternion.Lerp(transform.rotation, newRotation, Time.deltaTime * movementTime);
+        transform.rotation = newRotation;
         //cameraTransform.localPosition = Vector3.Lerp(cameraTransform.localPosition, newZoom, Time.deltaTime * movementTime);
 
     }
