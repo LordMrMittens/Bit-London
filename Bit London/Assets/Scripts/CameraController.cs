@@ -50,7 +50,7 @@ public class CameraController : MonoBehaviour
 
     void HandleMouseInput()
     {
-        if (Input.GetAxis("Mouse ScrollWheel") > 0f)
+        if (Input.GetAxis("Mouse ScrollWheel") < 0f)
         {
             orthographicCamera.orthographicSize = orthographicCamera.orthographicSize + 1000 * Time.deltaTime; //1000 = speed 
             if (orthographicCamera.orthographicSize > 40)
@@ -58,7 +58,7 @@ public class CameraController : MonoBehaviour
                 orthographicCamera.orthographicSize = 40; // Max size
             }
         }
-        if (Input.GetAxis("Mouse ScrollWheel") < 0f)
+        if (Input.GetAxis("Mouse ScrollWheel") > 0f)
         {
             orthographicCamera.orthographicSize = orthographicCamera.orthographicSize - 1000 * Time.deltaTime;
             if (orthographicCamera.orthographicSize < 10)
