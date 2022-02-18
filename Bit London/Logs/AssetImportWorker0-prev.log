@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 <<<<<<< Artist
+=======
+<<<<<<< HEAD
+>>>>>>> main
 Using pre-set license
 Built from '2020.3/staging' branch; Version is '2020.3.19f1 (68f137dc9bbe) revision 6877495'; Using compiler version '192528614'; Build Type 'Release'
 OS: 'Windows 10 Pro for Workstations; OS build 19044.1526; Version 2009; 64bit' Language: 'en' Physical Memory: 32469 MB
@@ -593,4 +597,8 @@ Start importing Assets/TEmp/Cube.prefab using Guid(4bb3ce5afc192024c8674a57c3ed7
 
 AssetImportWorkerClient::OnTransportError - code=2 error=End of file
 >>>>>>> Stashed changes
+<<<<<<< HEAD
 >>>>>>> object
+=======
+>>>>>>> designer
+>>>>>>> main
