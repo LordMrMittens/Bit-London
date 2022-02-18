@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657826, g: 0.49641263, b: 0.57481676, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1045,27 +1045,76 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   QnA:
-  - Question: he game the game
+  - Question: What year did its construction start?
     Answers:
-    - a
-    - Bit London
-    - c
-    - d
+    - 31st May 1859
+    - 28th September 1843
+    - 21st June 1845
+    - 12 April 1852
     CorrectAnswers: 2
-  - Question: AAAAAAAAA
+  - Question: When was its construction completed
     Answers:
-    - aa
-    - ss
-    - ww
-    - ee
+    - 28th September 1843
+    - 1st April 1962
+    - 27 August 1849
+    - 31st May 1859
     CorrectAnswers: 1
-  - Question: BBBBBBBBB
+  - Question: Where did the name Big Ben originate from?
     Answers:
-    - aa
-    - bb
-    - cc
-    - dd
+    - A nickname given to the bell inside the tower
+    - 'A nickname based on the designer of the clockwork '
+    - A name given to the minute hands on the clock
+    - Named after one of the Queens pets
+    CorrectAnswers: 1
+  - Question: What is the official name of the landmark?
+    Answers:
+    - Big Ben
+    - 'Parliment '
+    - Elizabeth Tower
+    - Buckingham Palace
+    CorrectAnswers: 3
+  - Question: How big is Big Ben?
+    Answers:
+    - 28 tons
+    - 14.2 tons
+    - 10 tons
+    - 13.7 tons
+    CorrectAnswers: 4
+  - Question: What british idiom is closely related to the landmark
+    Answers:
+    - Punch the clock
+    - A stone's throw
+    - Putting a penny on
+    - A sandwich short of a picnic
+    CorrectAnswers: 3
+  - Question: When was the first chime of the Big Ben
+    Answers:
+    - 11th July 1859
+    - 12th March 1850
+    - 8th November 1848
+    - 10th October 1853
+    CorrectAnswers: 1
+  - Question: What caused the clock to run slow in 1944
+    Answers:
+    - A storm
+    - A flock of birds
+    - The gears froze
+    - Renovations and repairs
     CorrectAnswers: 2
+  - Question: Who was the cheif designer of the clockwork
+    Answers:
+    - Thomas Malthus
+    - Guiseppe Mazzini
+    - Edmond Beckett Denison
+    - Simon Bolivar
+    CorrectAnswers: 3
+  - Question: What hangs on the pendulums of Big Ben
+    Answers:
+    - Rocks
+    - Gold
+    - 'Metal weights '
+    - Pennies
+    CorrectAnswers: 4
   options:
   - {fileID: 327537781}
   - {fileID: 1738298656}
