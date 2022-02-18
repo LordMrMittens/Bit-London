@@ -50,7 +50,7 @@ public class CameraController : MonoBehaviour
 
     void HandleMouseInput()
     {
-        if (Input.GetAxis("Mouse ScrollWheel") > 0f)
+        if (Input.GetAxis("Mouse ScrollWheel") < 0f)
         {
             orthographicCamera.orthographicSize = orthographicCamera.orthographicSize + 1000 * Time.deltaTime; //1000 = speed 
             if (orthographicCamera.orthographicSize > 40)
@@ -58,7 +58,7 @@ public class CameraController : MonoBehaviour
                 orthographicCamera.orthographicSize = 40; // Max size
             }
         }
-        if (Input.GetAxis("Mouse ScrollWheel") < 0f)
+        if (Input.GetAxis("Mouse ScrollWheel") > 0f)
         {
             orthographicCamera.orthographicSize = orthographicCamera.orthographicSize - 1000 * Time.deltaTime;
             if (orthographicCamera.orthographicSize < 10)
@@ -88,17 +88,18 @@ public class CameraController : MonoBehaviour
             newPosition += (transform.right * -movementSpeed);
         }
 
-        if (Input.GetKey(KeyCode.Q))
+        if (Input.GetKeyDown(KeyCode.Q))
         {
-            newRotation *= Quaternion.Euler(Vector3.up * rotationAmount);
+            newRotation *= Quaternion.Euler(new Vector3(0f, 45f, 0f));
         }
-        if (Input.GetKey(KeyCode.E))
+        if (Input.GetKeyDown(KeyCode.E))
         {
-            newRotation *= Quaternion.Euler(Vector3.up * -rotationAmount);
+            newRotation *= Quaternion.Euler(new Vector3(0f, -45f, 0f));
         }
 
         transform.position = Vector3.Lerp(transform.position, newPosition, Time.deltaTime * movementTime);
-        transform.rotation = Quaternion.Lerp(transform.rotation, newRotation, Time.deltaTime * movementTime);
+        //transform.rotation = Quaternion.Lerp(transform.rotation, newRotation, Time.deltaTime * movementTime);
+        transform.rotation = newRotation;
         //cameraTransform.localPosition = Vector3.Lerp(cameraTransform.localPosition, newZoom, Time.deltaTime * movementTime);
 
     }

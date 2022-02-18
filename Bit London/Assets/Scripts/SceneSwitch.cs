@@ -22,12 +22,7 @@ public class SceneSwitch : MonoBehaviour
         {
             guiObject.SetActive(true);
             if (guiObject.activeInHierarchy == true && Input.GetButtonDown("Use"))
-            {
-                /*if (goesToGroundFloor)
-                {
-                    InventoryBetweenScenes.spawnFromStairs = true;
-                }*/
-                
+            {           
                 Application.LoadLevel(levelToLoad);
 
             }
