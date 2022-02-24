@@ -17491,7 +17491,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &928666951
 Transform:
   m_ObjectHideFlags: 0
@@ -31755,20 +31755,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   waypoints:
   - {fileID: 274426988}
-  - {fileID: 1445360632}
-  - {fileID: 2110621629}
-  - {fileID: 118554662}
-  - {fileID: 1610815410}
-  - {fileID: 1438969587}
-  - {fileID: 1987410752}
-  - {fileID: 1798209404}
-  - {fileID: 585550888}
-  - {fileID: 2089173780}
+  - {fileID: 648428262}
+  - {fileID: 455156484}
+  - {fileID: 1955955497}
+  - {fileID: 451835818}
+  - {fileID: 1357305648}
+  - {fileID: 323616184}
+  - {fileID: 517283586}
   - {fileID: 1080444264}
-  - {fileID: 328515457}
-  - {fileID: 383832840}
-  - {fileID: 1871474378}
-  - {fileID: 371145174}
+  - {fileID: 2089173780}
   currentWaypoint: 0
   reachTargetRange: 2
 --- !u!195 &1680953405
