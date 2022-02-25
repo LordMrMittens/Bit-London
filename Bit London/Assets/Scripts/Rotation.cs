@@ -16,6 +16,6 @@ public class Rotation : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
-        rb.velocity = new Vector3(-50f, 0, 0) * Time.fixedDeltaTime;
+        rb.velocity = new Vector3(0, 0, 50f) * Time.fixedDeltaTime;
     }
 }
