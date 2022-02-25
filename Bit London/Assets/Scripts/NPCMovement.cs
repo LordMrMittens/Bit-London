@@ -29,8 +29,8 @@ public class NPCMovement : MonoBehaviour
     {
         currentWaypoint++;
         if (currentWaypoint >= waypoints.Length)
-            //currentWaypoint = 0;
-            Destroy(gameObject);
+            currentWaypoint = 0;
+            //Destroy(gameObject);
 
         agent.SetDestination(waypoints[currentWaypoint].transform.position);
     }
