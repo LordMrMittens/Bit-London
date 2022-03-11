@@ -32,20 +32,22 @@ public class CameraController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(followTransform != null)
+        transform.position = followTransform.position;
+        HandleMouseInput();
+        HandleMovementInput();
+        if (followTransform != null)
         {
-            transform.position = followTransform.position;
+            
         }
-        else
+        /*else
         {
-            HandleMouseInput();
-            HandleMovementInput();
+            
         }
 
         if (Input.GetKeyDown(KeyCode.Escape))
         {
             followTransform = null;
-        }
+        }*/
     }
 
     void HandleMouseInput()
@@ -65,13 +67,12 @@ public class CameraController : MonoBehaviour
             {
                 orthographicCamera.orthographicSize = 10; // Min size
             }
-
         }
     }
 
     void HandleMovementInput()
     {
-        if(Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.UpArrow))
+        /*if(Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.UpArrow))
         {
             newPosition += (transform.forward * movementSpeed);
         }
@@ -95,7 +96,7 @@ public class CameraController : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.E))
         {
             newRotation *= Quaternion.Euler(new Vector3(0f, -45f, 0f));
-        }
+        }*/
 
         transform.position = Vector3.Lerp(transform.position, newPosition, Time.deltaTime * movementTime);
         //transform.rotation = Quaternion.Lerp(transform.rotation, newRotation, Time.deltaTime * movementTime);
