@@ -10,8 +10,10 @@ public class QuizManager : MonoBehaviour
     public GameObject[] options;
     public int currentQuestion;
 
-    public GameObject QuizPanel;
-    public GameObject GoPanel;
+    public GameObject quizPanel;
+    public GameObject goPanel;
+
+    //Dialog dialog;
 
     public Text QuestionTxt;
     public Text ScoreTxt;
@@ -24,8 +26,10 @@ public class QuizManager : MonoBehaviour
     private void Start()
     {
         totalQuestions = QnA.Count;
-        QuizPanel.SetActive(false);
-        GoPanel.SetActive(false);
+        quizPanel.SetActive(false);
+        goPanel.SetActive(false);
+        //dialog = GetComponent<Dialog>();
+        //dialog.quizButton.SetActive(false);
         GenerateQuestion();
     }
 
@@ -36,8 +40,8 @@ public class QuizManager : MonoBehaviour
 
     public void GameOver()
     {
-        QuizPanel.SetActive(false);
-        GoPanel.SetActive(true);
+        quizPanel.SetActive(false);
+        goPanel.SetActive(true);
         ScoreTxt.text = score + "/" + totalQuestions;
     }
 
@@ -45,12 +49,19 @@ public class QuizManager : MonoBehaviour
     {
         score += 1;
         QnA.RemoveAt(currentQuestion);
-        GenerateQuestion();
+        StartCoroutine(WaitForNext());
     }
 
     public void Wrong()
     {
         QnA.RemoveAt(currentQuestion);
+        StartCoroutine(WaitForNext());
+    }
+
+    IEnumerator WaitForNext()
+    {
+        yield return new WaitForSeconds(1);
+
         GenerateQuestion();
     }
 
@@ -60,8 +71,9 @@ public class QuizManager : MonoBehaviour
         {
             options[i].GetComponent<AnswerScript>().isCorrect = false;
             options[i].transform.GetChild(0).GetComponent<Text>().text = QnA[currentQuestion].Answers[i];
+            options[i].GetComponent<Image>().color = options[i].GetComponent<AnswerScript>().startColor;
 
-            if(QnA[currentQuestion].CorrectAnswers == i + 1)
+            if (QnA[currentQuestion].CorrectAnswers == i + 1)
             {
                 options[i].GetComponent<AnswerScript>().isCorrect = true;
             }
