@@ -9,9 +9,12 @@ EditorBuildSettings:
     path: Assets/Scenes/Main Menu.unity
     guid: 822dda1c629e3a3489ec0eae9d553522
   - enabled: 1
-    path: Assets/Scenes/MainMap.unity
+    path: Assets/Scenes/Map.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
   - enabled: 1
     path: Assets/Scenes/BigBen.unity
     guid: bb612fa4805d10646807cb3f7b333021
+  - enabled: 1
+    path: Assets/Scenes/GoldenChippy.unity
+    guid: da933a6a9a813f34da98b72cc577396a
   m_configObjects: {}
