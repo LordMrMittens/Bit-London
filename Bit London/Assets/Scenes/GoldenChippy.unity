@@ -3002,8 +3002,11 @@ MonoBehaviour:
   sentences:
   - 'Chris: Hello, Welcome to Golden Chippy'
   - 'Player: Hello'
-  - 'Chris: Do want to learn our special recipe'
+  - 'Chris: Do you want to learn our special recipe?'
   - 'Player: Yes, of course'
+  - 'Chris: Our main ingredient is love. We love what we are doing'
+  - 'Player: Wow thats wonderfull'
+  - 'Chris: We would love to see you in our restaurant.'
   typingSpeed: 0.2
   continueButton: {fileID: 791564776}
   quizButton: {fileID: 1563963094}
@@ -3162,8 +3165,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: -210, y: 60}
-  m_SizeDelta: {x: 220, y: 50}
+  m_AnchoredPosition: {x: -180.71179, y: 60}
+  m_SizeDelta: {x: 278.5764, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1563963096
 MonoBehaviour:
@@ -3241,7 +3244,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Start the quiz
+  m_text: Go back to Main Map
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 393f6c02b7e8d5c448ad8f2ec16d3e4f, type: 2}
   m_sharedMaterial: {fileID: 1838776517291381634, guid: 393f6c02b7e8d5c448ad8f2ec16d3e4f, type: 2}
