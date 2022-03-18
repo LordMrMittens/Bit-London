@@ -33,21 +33,9 @@ public class CameraController : MonoBehaviour
     void Update()
     {
         transform.position = followTransform.position;
+
         HandleMouseInput();
         HandleMovementInput();
-        if (followTransform != null)
-        {
-            
-        }
-        /*else
-        {
-            
-        }
-
-        if (Input.GetKeyDown(KeyCode.Escape))
-        {
-            followTransform = null;
-        }*/
     }
 
     void HandleMouseInput()
@@ -98,7 +86,7 @@ public class CameraController : MonoBehaviour
             newRotation *= Quaternion.Euler(new Vector3(0f, -45f, 0f));
         }
 
-        transform.position = Vector3.Lerp(transform.position, newPosition, Time.deltaTime * movementTime);
+        //transform.position = Vector3.Lerp(transform.position, newPosition, Time.deltaTime * movementTime);
         //transform.rotation = Quaternion.Lerp(transform.rotation, newRotation, Time.deltaTime * movementTime);
         transform.rotation = newRotation;
         //cameraTransform.localPosition = Vector3.Lerp(cameraTransform.localPosition, newZoom, Time.deltaTime * movementTime);
