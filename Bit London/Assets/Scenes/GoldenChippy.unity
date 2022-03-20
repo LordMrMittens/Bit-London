@@ -3132,8 +3132,11 @@ MonoBehaviour:
   - 'Chris: Do you want to learn our special recipe?'
   - 'Player: Yes, of course'
   - 'Chris: Our main ingredient is love. We love what we are doing'
-  - 'Player: Wow thats wonderfull'
+  - 'Player: Wow thats wonderful'
   - 'Chris: We would love to see you in our restaurant.'
+  - 'Chris: This is your Discount Voucher FKA1-VCHR-BBRE-E2FG. '
+  - 'Chris: You can get 25% discount if you show your Voucher before paying your
+    bill'
   typingSpeed: 0.05
   continueButton: {fileID: 791564776}
   quizButton: {fileID: 1563963094}
