@@ -1441,12 +1441,12 @@ MonoBehaviour:
     - 21st June 1845
     - 12 April 1852
     CorrectAnswers: 2
-  - Question: When was its construction completed
+  - Question: When was its construction completed?
     Answers:
-    - 28th September 1843
+    - 31st May 1859
     - 1st April 1962
     - 27 August 1849
-    - 31st May 1859
+    - 28th September 1843
     CorrectAnswers: 1
   - Question: Where did the name Big Ben originate from?
     Answers:
@@ -1462,42 +1462,42 @@ MonoBehaviour:
     - Elizabeth Tower
     - Buckingham Palace
     CorrectAnswers: 3
-  - Question: How big is Big Ben?
+  - Question: How much does the Landmark weigh?
     Answers:
     - 28 tons
     - 14.2 tons
     - 10 tons
     - 13.7 tons
     CorrectAnswers: 4
-  - Question: What british idiom is closely related to the landmark
+  - Question: What british idiom is closely related to the landmark?
     Answers:
     - Punch the clock
     - A stone's throw
     - Putting a penny on
     - A sandwich short of a picnic
     CorrectAnswers: 3
-  - Question: When was the first chime of the Big Ben
+  - Question: When was the first chime of the Big Ben?
     Answers:
     - 11th July 1859
     - 12th March 1850
     - 8th November 1848
     - 10th October 1853
     CorrectAnswers: 1
-  - Question: What caused the clock to run slow in 1944
+  - Question: What caused the clock to run slow in 1944?
     Answers:
     - A storm
     - A flock of birds
     - The gears froze
     - Renovations and repairs
     CorrectAnswers: 2
-  - Question: Who was the cheif designer of the clockwork
+  - Question: Who was the cheif designer of the clockwork?
     Answers:
     - Thomas Malthus
     - Guiseppe Mazzini
     - Edmond Beckett Denison
     - Simon Bolivar
     CorrectAnswers: 3
-  - Question: What hangs on the pendulums of Big Ben
+  - Question: What hangs on the pendulums of Big Ben?
     Answers:
     - Rocks
     - Gold
