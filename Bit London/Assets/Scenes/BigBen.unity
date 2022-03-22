@@ -3184,7 +3184,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   textDisplay: {fileID: 215329341}
   sentences:
-  - 'Knight: Hello mate'
+  - 'Guard: Hello mate'
   - 'Player: Hello'
   typingSpeed: 0.05
   continueButton: {fileID: 791564776}
