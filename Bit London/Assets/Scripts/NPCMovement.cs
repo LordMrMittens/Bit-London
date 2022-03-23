@@ -56,7 +56,7 @@ public class NPCMovement : MonoBehaviour
         }
 
         //agent.SetDestination(waypoints[currentWaypoint].transform.position);
-        transform.position = Vector3.MoveTowards(transform.position, waypoints[currentWaypoint].transform.position, (speed / 100));
+        transform.position = Vector3.MoveTowards(transform.position, waypoints[currentWaypoint].transform.position, (speed * Time.deltaTime));
         transform.LookAt(waypoints[currentWaypoint].transform.position);
     }
 
