@@ -1976,7 +1976,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: 4d84f1cbc6b9193439e440755965af71, type: 3}
-    m_FontSize: 60
+    m_FontSize: 40
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 0
@@ -1987,10 +1987,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Credits
-
-
-    Music Sourced from -  https://www.free-stock-music.com
+  m_Text: 'Music Sourced from -  https://www.free-stock-music.com
 
 
     Alexander
@@ -2002,16 +1999,32 @@ MonoBehaviour:
     To Work Again
 
 
-    3d Art Inspiration:
+    3rd party assets & 3D Art Inspiration:
 
 
-    Andrea Skandurra
+    Andrea Scandurra
+    https://www.instagram.com/andreaska_/?hl=en-gb
 
-    Micro Mick
-    Voxels
+    Lucas Rgznsk https://www.artstation.com/rgznsk/prints
+
+    Michael
+    Judge https://twitter.com/mikelovesrobots
+
+    William Santacruz https://twitter.com/wsvoxel?lang=en
+
+    Ingen
+    https://twitter.com/zmei23
+
+    Ephtracy - https://twitter.com/ephtracy
+
+    Antione
+    Lendrevie https://www.behance.net/sircarma
+
+    Thibault Simar https://twitter.com/thibaultsimar
 
 
-    Special Thanks to MagicaVoxel'
+    Special
+    Thanks to MagicaVoxel'
 --- !u!222 &1302926719
 CanvasRenderer:
   m_ObjectHideFlags: 0
