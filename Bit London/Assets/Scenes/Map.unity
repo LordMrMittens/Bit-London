@@ -6613,7 +6613,7 @@ MonoBehaviour:
   - {fileID: 371145174}
   currentWaypoint: 0
   reachTargetRange: 2
-  speed: 1
+  speed: 5
   check: 1
 --- !u!208 &146795250
 NavMeshObstacle:
@@ -8979,7 +8979,7 @@ MonoBehaviour:
   - {fileID: 831489452}
   currentWaypoint: 0
   reachTargetRange: 2
-  speed: 1
+  speed: 5
   check: 1
 --- !u!208 &210384980
 NavMeshObstacle:
@@ -33534,7 +33534,7 @@ MonoBehaviour:
   - {fileID: 371145174}
   currentWaypoint: 0
   reachTargetRange: 2
-  speed: 1
+  speed: 5
   check: 1
 --- !u!208 &704915342
 NavMeshObstacle:
@@ -53869,7 +53869,7 @@ MonoBehaviour:
   - {fileID: 1111926137}
   currentWaypoint: 0
   reachTargetRange: 2
-  speed: 1
+  speed: 5
   check: 1
 --- !u!208 &1113914597
 NavMeshObstacle:
@@ -59235,7 +59235,7 @@ MonoBehaviour:
   - {fileID: 1428170366}
   currentWaypoint: 0
   reachTargetRange: 2
-  speed: 1
+  speed: 5
   check: 1
 --- !u!4 &1238310336
 Transform:
@@ -61152,7 +61152,7 @@ MonoBehaviour:
   - {fileID: 1226119160}
   currentWaypoint: 0
   reachTargetRange: 2
-  speed: 1
+  speed: 5
   check: 1
 --- !u!1 &1277125507
 GameObject:
@@ -80130,7 +80130,7 @@ MonoBehaviour:
   - {fileID: 940111101}
   currentWaypoint: 0
   reachTargetRange: 2
-  speed: 1
+  speed: 5
   check: 1
 --- !u!4 &1680953408
 Transform:
@@ -82950,7 +82950,7 @@ MonoBehaviour:
   - {fileID: 62101555}
   currentWaypoint: 0
   reachTargetRange: 2
-  speed: 1
+  speed: 5
   check: 1
 --- !u!208 &1761114434
 NavMeshObstacle:
